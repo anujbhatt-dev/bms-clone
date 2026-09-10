@@ -94,7 +94,7 @@ export default function Movie() {
           {
             movie.cast.map(castMember=>(
               <div key={castMember.name.split(" ").join("")} className="rounded-lg shrink-0 w-30 flex flex-col gap-3">
-                <img src="https://i.pravatar.cc/300" alt="" className="h-30 w-30 rounded-lg object-cover"/>
+                <img src={`${castMember.imgUrl}` || `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRckoYfa3-0Qrwtn_hS0Ar86m-ykQEm_jQ3FmHLTXsjsw&s=10`} alt="" className="h-30 w-30 rounded-lg object-cover"/>
                 <div>
                   <p className="line-clamp-1">{castMember.name}</p>
                   <p className="text-sm text-neutral-500 mt-1">as {castMember.role}</p>
