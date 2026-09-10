@@ -38,7 +38,8 @@ export default function Booking() {
                     <p className="font-bold">{bookingDetails.movieTitle} {"("}{bookingDetails.movieCert}{")"}</p>
                     <p className="text-neutral-500 text-sm mt-1">{new Date(bookingDetails.showDate).toDateString()}</p>
                     <p className="text-neutral-500 text-sm mt-1">PVR: Centrio, Dehradun</p>
-                    <p className="text-neutral-500 text-sm mt-1 capitalize font-medium">Booked by: {bookingDetails.userName}</p>
+                    <p className="text-neutral-500 text-sm mt-1 capitalize font-medium">User Name: {bookingDetails.userName}</p>
+                    <p className="text-neutral-500 text-sm mt-1 capitalize font-medium">User Email: {bookingDetails.userEmail}</p>
                 </div>
             </div>
             <div className="relative my-8 ">
