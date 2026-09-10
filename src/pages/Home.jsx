@@ -28,9 +28,9 @@ export default function Home() {
         <div className="flex gap-2 flex-nowrap overflow-x-auto scrollbar-none snap-mandatory">
           {movies.length == 0 ? <div>Loading...</div> :
             movies.map((movie)=>(
-              <Link key={movie.slug} to={`/movies/${movie.slug}`} className=" sm:aspect-3/5 shrink-0 text-black ">
+              <Link key={movie.slug} to={`/movies/${movie.slug}`} className="  sm:aspect-3/5 shrink-0 text-black ">
                 <img src={movie.portraitUrl} className="h-auto sm:h-[47vh] w-[60vw] sm:w-auto object-cover rounded-lg" alt="" />
-                <p className="mt-2 font-semibold line-clamp-1">{movie.title}</p>
+                <p className="mt-2 font-semibold line-clamp-1 w-50">{movie.title}</p>
                 <p className="mt-1 text-neutral-500">{movie.genres.join("/")}</p>
               </Link>
             ))
