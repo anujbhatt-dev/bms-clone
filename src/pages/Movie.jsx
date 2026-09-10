@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
 import { offers } from "../data"
 import { Banknote } from "lucide-react"
+import { Star } from "lucide-react"
 
 export default function Movie() {
   const {movieSlug} = useParams()
@@ -39,6 +40,7 @@ export default function Movie() {
           <div className="flex flex-col  gap-5">
             <h2 className="text-4xl font-bold">{movie.title}</h2>
             <div className="flex gap-4 text-lg">
+              <Star  className="h-6 w-6 text-pink-800 fill-pink-800 stroke-2"/>
               <p className="font-semibold">{movie.rating}/10</p>
               <p>{"("}{movie.votes/1000}k+ votes{")"}</p>
             </div>
